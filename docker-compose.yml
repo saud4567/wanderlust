@@ -17,7 +17,7 @@ services:
       - "6379:6379"
 
   backend:
-    build: ./backend
+    build: ./
     container_name: backend-app
     ports:
       - "5000:5000"
@@ -28,7 +28,7 @@ services:
       - redis
 
   frontend:
-    build: ./frontend
+    build: ./
     container_name: frontend-app
     ports:
       - "5173:5173"
