@@ -18,7 +18,7 @@ services:
 
   backend:
     build: ./backend
-    container_name: backend_cont
+    container_name: backend-app
     ports:
       - "5000:5000"
     env_file:
@@ -29,7 +29,7 @@ services:
 
   frontend:
     build: ./frontend
-    container_name: frontend_cont
+    container_name: frontend-app
     ports:
       - "5173:5173"
     env_file:
